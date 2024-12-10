@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Website of KiloGen Therapeutics</title>
+    <!-- Meta information for web crawlers -->
+    <meta name="description" content="KiloGen Therapeutics specializes in proximity pharmacology, molecular glues, targeted protein degradation (TPD), biotechnology, drug discovery, and assay development.">
+    <meta name="keywords" content="molecular glue, TPD, biotechnology, drug discovery, assay development, proximity pharmacology">
+    <meta name="author" content="KiloGen Therapeutics">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica", Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f9f9f9;
+        color: #333;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script>
+      // JavaScript for email obfuscation
+      function displayEmail() {
+        const email = "contact@kilo-gen.com";
+        const emailLink = `<a href="mailto:${email}">${email}</a>`;
+        document.getElementById("email-container").innerHTML = emailLink;
+      }
+    </script>
+  </head>
+  <body onload="displayEmail()">
+    <h1>KiloGen Therapeutics</h1>
+    <p>We are based in Cambridge, UK</p>
+    <p>More content coming soon.</p>
+    <img src="/cambridge_cow.png" alt="Cambridge Cow">
+    <p id="email-container">Contact: (Loading email...)</p>
+  </body>
+</html>
