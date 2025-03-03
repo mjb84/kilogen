@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Website of KiloGen Therapeutics</title>
+    <!-- Meta information for web crawlers -->
+    <meta name="description" content="KiloGen Therapeutics specializes in proximity pharmacology, molecular glues, targeted protein degradation (TPD), biotechnology, drug discovery, and assay development.">
+    <meta name="keywords" content="molecular glue, TPD, biotechnology, drug discovery, assay development, proximity pharmacology">
+    <meta name="author" content="KiloGen Therapeutics">
+    <style>
+      /* Background image settings */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica", Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        min-height: 100vh;
+        background: url('sky.jpg') no-repeat center center fixed;
+        background-size: cover; /* Ensures it covers the whole screen */
+      }
 
+      /* Ensure background is tiled only when needed */
+      @media (max-width: 800px) {
+        body {
+          background-size: contain;
+          background-repeat: repeat;
+        }
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      /* Logo settings */
+      .logo {
+        width: 30%; /* Adjust size as needed */
+        max-width: 300px;
+        height: auto;
+      }
+
+      /* Company info formatting */
+      .company-info {
+        font-size: 1.2em;
+        line-height: 1.5;
+      }
+
+      .company-info i {
+        font-style: italic;
+      }
+    </style>
+    <script>
+      // JavaScript for email obfuscation
+      function displayEmail() {
+        const email = "contact@kilo-gen.com";
+        const emailLink = `<a href="mailto:${email}" style="color: white; text-decoration: none;">${email}</a>`;
+        document.getElementById("email-container").innerHTML = emailLink;
+      }
+    </script>
+  </head>
+  <body onload="displayEmail()">
+    <!-- SVG Logo -->
+    <img src="kilogen_logo.svg" alt="KiloGen Logo" class="logo">
+
+    <p>More content coming soon.</p>
+    
+    <p class="company-info">
+      KiloGen LTD<br>
+      82a James Carter Road, Mildenhall, United Kingdom, IP28 7DE<br>
+      <i>Registered in England and Wales, company number: 16279298</i>
+    </p>
+
+    <p id="email-container">Contact: (Loading email...)</p>
+  </body>
+</html>
