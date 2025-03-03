@@ -18,8 +18,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: #f9f9f9;
-        color: #333;
+        background-color: #182c36;
+        color: white;
         min-height: 100vh;
       }
       h1 {
@@ -30,11 +30,6 @@
         font-size: 1.2em;
         margin: 10px 0;
       }
-      img.logo {
-        width: 15%;
-        height: auto;
-        border: none;
-      }
       video.logo {
         max-width: 100%;
         height: auto;
@@ -42,26 +37,35 @@
         border: 2px solid #ddd;
         border-radius: 10px;
       }
+      .company-info {
+        font-size: 1.2em;
+        line-height: 1.5;
+      }
+      .company-info i {
+        font-style: italic;
+      }
     </style>
     <script>
       // JavaScript for email obfuscation
       function displayEmail() {
         const email = "contact@kilo-gen.com";
-        const emailLink = `<a href="mailto:${email}">${email}</a>`;
+        const emailLink = `<a href="mailto:${email}" style="color: white; text-decoration: none;">${email}</a>`;
         document.getElementById("email-container").innerHTML = emailLink;
       }
     </script>
   </head>
   <body onload="displayEmail()">
     <p></p>
-      <video class="logo" autoplay muted playsinline>
+    <video class="logo" autoplay muted playsinline>
       <source src="KiloGen_logo.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
+    </video>
     <p>Kilogen Therapeutics. More content coming soon.</p>
-    <p>KiloGen LTD
-      <i></i>82a James Carter Road, Mildenhall, United Kingdom, IP28 7DE
-      Registered in England and Wales, company number: 16279298</i>
+    
+    <p class="company-info">
+      KiloGen LTD<br>
+      82a James Carter Road, Mildenhall, United Kingdom, IP28 7DE<br>
+      <i>Registered in England and Wales, company number: 16279298</i>
     </p>
 
     <p id="email-container">Contact: (Loading email...)</p>
