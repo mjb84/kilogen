@@ -10,20 +10,33 @@
     <meta name="author" content="KiloGen Therapeutics">
     <style>
       /* Background image settings */
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Helvetica", Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        min-height: 100vh;
-        background: url('sky.jpg') no-repeat center center fixed;
-        background-size: cover; /* Ensures it covers the whole screen */
-      }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  background: url('sky.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Add a dark overlay */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 = 50% darker) */
+  z-index: -1; /* Keeps it behind content */
+}
 
       /* Ensure background is tiled only when needed */
       @media (max-width: 800px) {
