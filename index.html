@@ -35,7 +35,7 @@
         height: auto;
         border: none;
       }
-      img.cow {
+      video.logo {
         max-width: 100%;
         height: auto;
         margin: 20px 0;
@@ -57,7 +57,11 @@
     <img src="kilogen.png" alt="KiloGen Logo" class="logo">
     <p>Kilogen Therapeutics. More content coming soon.</p>
     <p>We are based in Cambridge, UK</p>
-    <img src="cambridge_cow.png" alt="Cambridge Cow" class="cow">
+    <!-- Replacing the cow image with a looping video -->
+    <video class="logo" autoplay loop muted playsinline>
+      <source src="KiloGen_logo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <p id="email-container">Contact: (Loading email...)</p>
   </body>
 </html>
